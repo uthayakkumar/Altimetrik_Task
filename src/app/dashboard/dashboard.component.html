@@ -1,0 +1,37 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-6 col-xs-12">
+      <mat-card>
+        <mat-card-title>Market Trends</mat-card-title>
+        <mat-card-content>
+          <canvas baseChart
+            [data]="marketTrendsData"
+            [type]="'line'">
+          </canvas>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <mat-card>
+        <mat-card-title>Performance Metrics</mat-card-title>
+        <mat-card-content>
+          <canvas baseChart
+            [data]="performanceMetricsData"
+            [type]="'bar'">
+          </canvas>
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="col-md-6 col-xs-12">
+        <mat-card>
+          <mat-card-title>Asset Allocation</mat-card-title>
+          <mat-card-content>
+            <canvas baseChart
+              [data]="assetAllocationData"
+              [type]="'pie'">
+            </canvas>
+          </mat-card-content>
+        </mat-card>
+      </div>
+  </div>
+</div>

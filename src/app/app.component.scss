@@ -1,0 +1,13 @@
+nav {
+    display: flex;
+    gap: 1rem;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    .active {
+      font-weight: bold;
+      border-bottom: 3px solid #36a2eb;
+      padding-bottom: 5px;
+    }
+  }
